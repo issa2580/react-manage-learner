@@ -1,0 +1,100 @@
+/* src/styles/custom.css */
+
+/* Couleurs principales */
+.bg-primary-custom {
+  background-color: #ff7f2a !important;
+}
+
+.text-primary-custom {
+  color: #ff7f2a !important;
+}
+
+.bg-primary-light {
+  background-color: #ff7f2ac2 !important;
+}
+
+.bg-secondary-custom {
+  background-color: #1d2636 !important;
+}
+
+.text-secondary-custom {
+  color: whitesmoke !important;
+}
+
+.bg-secondary-light {
+  background-color: #1d2636a8 !important;
+}
+
+/* Styles pour header et footer */
+.header-footer {
+  background-color: #0a192f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.nav-link-custom {
+  color: whitesmoke !important;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.nav-link-custom:hover {
+  color: #ff7f2a !important;
+}
+
+/* Styles pour le corps */
+.container-custom {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+/* Styles pour le footer collé en bas */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* src/styles/custom.css */
+.user-photo-detail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #ff7f2a; /* Utilisation de la couleur principale */
+}
+
+.card-title {
+  color: #1d2636; /* Utilisation de la couleur secondaire */
+}
+
+.list-group-item {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: #ff7f2a;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff7f2ac2;
+}
