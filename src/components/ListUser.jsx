@@ -23,7 +23,11 @@ const ListUser = ({ users, onDelete }) => {
               <td className="align-middle">
                 {user.photo && (
                   <img
-                    src={URL.createObjectURL(user.photo)}
+                    src={
+                      typeof user.photo === "string"
+                        ? user.photo
+                        : URL.createObjectURL(user.photo)
+                    }
                     alt={`${user.prenom} ${user.nom}`}
                     width="70"
                     height="70"

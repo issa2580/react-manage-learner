@@ -1,7 +1,6 @@
 // src/components/UserDetails.js
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import Thioro from "../images/thioro.jpeg";
 import "../styles/custom.css";
 
 const DetailsUser = ({ users }) => {
@@ -21,12 +20,12 @@ const DetailsUser = ({ users }) => {
             {user.photo && (
               <img
                 src={
-                  Thioro
-                  // typeof user.photo === "string"
-                  //   ? user.photo
-                  //   : user.photo instanceof File
-                  //   ? URL.createObjectURL(user.photo)
-                  //   : ""
+                  // Thioro
+                  typeof user.photo === "string"
+                    ? user.photo
+                    : user.photo instanceof File
+                    ? URL.createObjectURL(user.photo)
+                    : ""
                 }
                 alt={`${user.prenom} ${user.nom}`}
                 className="rounded-circle user-photo-detail"

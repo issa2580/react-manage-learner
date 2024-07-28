@@ -20,9 +20,14 @@ const AddUser = ({ onAdd }) => {
     setUser({ ...user, [name]: value });
   };
 
+  // const handlePhotoChange = (e) => {
+  //   const file = e.target.files[0];
+  //   setUser({ ...user, photo: file });
+  // };
+
   const handlePhotoChange = (e) => {
     const file = e.target.files[0];
-    setUser({ ...user, photo: file });
+    setUser({ ...user, photo: URL.createObjectURL(file) });
   };
 
   const handleModulesChange = (e) => {
